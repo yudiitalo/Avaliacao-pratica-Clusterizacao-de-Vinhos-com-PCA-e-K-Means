@@ -1,1 +1,8 @@
-# Avalia-o-pr-tica-Clusteriza-o-de-Vinhos-com-PCA-e-K-Means
+# Avaliaçãoo prática: Clusterização de Vinhos com PCA e K-Means
+1) Carregar e Preparar os Dados: Os dados do dataset são armazenados na matriz X e os rótulos verdadeiros no vetor y_true, em seguida o pré-processamento StandardScaler é aplicado a X e armazenado na matriz X_scaled, por fim é realizado um print mostrando o formato dos dados armazenados em X sendo este formato 178 linhas e 13 colunas, com as linhas representando as amostras e as colunas representando as características.
+
+2) Aplicar o PCA: O PCA é configurado para reduzir as dimensões a 2 componentes principais e é aplicado nos dados de X_scaled com o resultado armazenado na matriz X_pca, em seguida é criado um dataframe pca_df com os dados de X_pca e as colunas com os nomes de Componente Principal 1 e Componente Principal 2, por fim são realizados dois prints, o Primeiro sendo do formato dos dados armazenados em X_pca sendo esse formato de 178 linhas e 2 colunas e o segundo da variância total dos dois componentes principais.
+
+3) Aplicar o K-Means nos Dados Reduzidos: O K-Means é configurado para criar 3 clusters o K-Means é aplicado a X_pca e o resultado armazenado em y_kmeans, por fim os dados y_kmeans são adicionado ao dataframe pca_df na coluna Cluster_KMeans.
+
+4) Visualizar os Resultados: São plotados dois gráficos com os dados do dataframe pca_df, o primeiro com a classificação e clusters do K-Means, o segundo com os rótulos verdadeiros armazenados em y_true que foi adicionado ao dataframe antes da plotagem do segundo gráfico. Como os gráficos são mostrados lado a lado e ambos possuem o pré-processamento do PCA é facilmente perceptível as diferenças de ambos.
